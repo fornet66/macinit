@@ -1,0 +1,28 @@
+
+export SOFT_HOME=$HOME/soft
+export PATH=$PATH:$SOFT_HOME/bin
+
+# java
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$PATH:$JAVA_HOME/bin
+
+# maven
+export M2_HOME=$SOFT_HOME/apache-maven-3.3.9
+export MAVEN_OPTS="-Xms128m -Xmx512m"
+export PATH=$PATH:$M2_HOME/bin
+
+# cxf
+export CXF_HOME=$SOFT_HOME/apache-cxf-3.0.9
+export PATH=$PATH:$CXF_HOME/bin
+
+# protobuf
+export PROTOBUF_HOME=$SOFT_HOME/protoc-3.3.0-osx-x86_64
+export PATH=$PATH:$PROTOBUF_HOME/bin
+
+# tomcat
+export CATALINA_HOME=$SOFT_HOME/apache-tomcat-8.0.30
+export PATH=$PATH:$CATALINA_HOME/bin
+
+# path
+export PATH=.:$PATH
+

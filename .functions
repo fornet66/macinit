@@ -1,0 +1,6 @@
+
+function json() {
+    str='{'${1#*'{'};str=${str%'}'*}'}'
+    echo "$str" | python -m json.tool
+}
+
