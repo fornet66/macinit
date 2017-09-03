@@ -22,15 +22,16 @@ alias grep="grep --color=auto"
 # rm
 alias rm='trash'
 # beautify json
-alias jb='pbpaste | json_pp'
+alias jsonbeautify='pbpaste | json_pp'
 # beautify xml
-alias xb='pbpaste | xmllint --format'
+alias xmlbeautify='pbpaste | xmllint --format'
 # test soap
 alias testws='curl --header "content-type: text/xml" -d @request.xml http://localhost:8080/ws'
 # test restful
 alias testrest='curl --header "content-type: text/json" -d @request.json http://localhost:8080/rest'
 
 alias ip="ifconfig|grep 'inet '"
-alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias sc="screencapture -c -s"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 
