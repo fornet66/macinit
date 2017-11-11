@@ -7,28 +7,47 @@ ln -s `pwd`/.exports ~/.exports
 ln -s `pwd`/.aliases ~/.aliases
 ln -s `pwd`/.functions ~/.functions
 ln -s `pwd`/.vimrc ~/.vimrc
+ln -s `pwd`/.vimrc.bundle ~/.vimrc.bundle
 ln -s `pwd`/.editorconfig ~/.editorconfig
 ln -s `pwd`/.gitignore ~/.gitignore
+
+## git config
+git config --global user.name "zhuiyu"
+git config --global user.email zhuiyu@gmail.com
+git config --global core.editor vim
+git config --global merge.tool vimdiff
+git config --global core.quotepath false    ## 显示中文
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+
+## install node
 
 ## install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ## brew install software
-brew install wget
+brew install archey
 brew install trash
-brew install balance
+brew install wget
+brew install axel
 brew install enca
 brew install lrzsz
+brew install htop
+brew install imagemagick
 
 ## brew install programming tools
+brew install cloc
+brew install tig
+brew install httpie
 brew install highlight
-brew install jadx
+brew install shellcheck
 brew install groovy
 brew install lua
-brew install node
 brew install redis
+brew install mycli
 brew install mariadb
 brew install nginx
+brew install balance
+brew install maven
 
 ## install brew cask
 brew tap caskroom/cask
@@ -67,11 +86,5 @@ brew cask install cocoarestclient
 brew cask install sequel-pro
 brew cask install cakebrew
 
-## git config
-git config --global user.name "zhuiyu"
-git config --global user.email zhuiyu@gmail.com
-git config --global core.editor vim
-git config --global merge.tool vimdiff
-git config --global core.quotepath false    ## 显示中文
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+say "Your mac initialize success"
 
