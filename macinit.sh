@@ -39,6 +39,7 @@ brew cask install google-chrome
 brew cask install mplayerx
 brew cask install tickeys
 brew cask install go2shell
+brew cask install qqmusic
 brew cask install qiyimedia
 brew cask install youdaodict
 
