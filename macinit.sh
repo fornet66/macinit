@@ -17,6 +17,7 @@ brew install lua
 brew install node
 brew install redis
 brew install mariadb
+brew install nginx
 
 ## install brew cask
 brew tap caskroom/cask
@@ -35,7 +36,7 @@ brew cask install webpquicklook
 
 brew cask install the-unarchiver
 brew cask install google-chrome
-brew cask install 5kplayer
+brew cask install mplayerx
 brew cask install tickeys
 brew cask install go2shell
 brew cask install qiyimedia
@@ -59,6 +60,6 @@ git config --global user.name "zhuiyu"
 git config --global user.email zhuiyu@gmail.com
 git config --global core.editor vim
 git config --global merge.tool vimdiff
-git config --global core.quotepath false    \#\# 显示中文
+git config --global core.quotepath false    ## 显示中文
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 

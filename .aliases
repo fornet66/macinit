@@ -30,7 +30,7 @@ alias testws='curl --header "content-type: text/xml" -d @request.xml http://loca
 # test restful
 alias testrest='curl --header "content-type: text/json" -d @request.json http://localhost:8080/rest'
 
-alias ip="ifconfig|grep 'inet '"
+alias ip="ifconfig|grep -v 127.0.0.1|grep 'inet '|awk -F ' ' '{print \$2}'"
 alias sc="screencapture -c -s"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
