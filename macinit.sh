@@ -1,4 +1,15 @@
 
+## init user env
+ln -s `pwd`/.bash_profile ~/.bash_profile
+ln -s `pwd`/.path ~/.path
+ln -s `pwd`/.prompt ~/.prompt
+ln -s `pwd`/.exports ~/.exports
+ln -s `pwd`/.aliases ~/.aliases
+ln -s `pwd`/.functions ~/.functions
+ln -s `pwd`/.vimrc ~/.vimrc
+ln -s `pwd`/.editorconfig ~/.editorconfig
+ln -s `pwd`/.gitignore ~/.gitignore
+
 ## install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
