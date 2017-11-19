@@ -16,10 +16,20 @@ git config --global user.name "zhuiyu"
 git config --global user.email zhuiyu@gmail.com
 git config --global core.editor vim
 git config --global merge.tool vimdiff
+git config --global core.autocrlf input
 git config --global core.quotepath false    ## 显示中文
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
 ## install node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+nvm install 8.2.1
+nvm alias default 8.2.1
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm config set registry https://registry.npm.taobao.org
+
+npm install -g tnpm --registry=http://registry.npm.alibaba-inc.com
+tnpm i @ali/dawn -g
 
 ## install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
