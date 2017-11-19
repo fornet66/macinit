@@ -10,6 +10,7 @@ ln -s `pwd`/.vimrc ~/.vimrc
 ln -s `pwd`/.vimrc.bundle ~/.vimrc.bundle
 ln -s `pwd`/.editorconfig ~/.editorconfig
 ln -s `pwd`/.gitignore ~/.gitignore
+ln -s `pwd`/.inputrc ~/.inputrc
 
 ## git config
 git config --global user.name "zhuiyu"
