@@ -1,4 +1,8 @@
 
+## oh my zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ## init user env
 ln -s `pwd`/.bash_profile ~/.bash_profile
 ln -s `pwd`/.path ~/.path
