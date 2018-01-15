@@ -22,15 +22,22 @@ ps -mp 20379 -o THREAD,tid,time
 ## 查看gc
 sudo jstat -gc 20379 250 20
 
+## dump jvm
+sudo jmap -F -dump:format=b,file=heap.bin 12345
+
 ## 打印java堆栈
 sudo jstack -F 20379
 
 ## git开建一个新分支
 git tag publish/0.0.1
 git push origin publish/0.0.1
-git checkout -b daily/0.0.2
 git checkout master
 git pull origin master
-git checkout daily/0.0.2
+git checkout -b daily/0.0.2
 git rebase master
+
+## 删除tag
+git tag -d publish/0.0.2
+git push origin --delete publish/0.0.2
+git push origin :refs/tags/publish/0.0.2
 

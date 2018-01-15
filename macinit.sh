@@ -4,21 +4,16 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 ## init user env
-ln -s `pwd`/.bash_profile ~/.bash_profile
-ln -s `pwd`/.path ~/.path
-ln -s `pwd`/.prompt ~/.prompt
-ln -s `pwd`/.exports ~/.exports
-ln -s `pwd`/.aliases ~/.aliases
-ln -s `pwd`/.functions ~/.functions
 ln -s `pwd`/.vimrc ~/.vimrc
 ln -s `pwd`/.vimrc.bundle ~/.vimrc.bundle
 ln -s `pwd`/.editorconfig ~/.editorconfig
 ln -s `pwd`/.gitignore ~/.gitignore
 ln -s `pwd`/.inputrc ~/.inputrc
+cp `pwd`/.zshrc ~/.zshrc
 
 ## git config
-git config --global user.name "zhuiyu"
-git config --global user.email zhuiyu@gmail.com
+git config --global user.name "fornet66"
+git config --global user.email fornet66@gmail.com
 git config --global core.editor vim
 git config --global merge.tool vimdiff
 git config --global core.autocrlf input
