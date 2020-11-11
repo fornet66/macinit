@@ -74,26 +74,31 @@ brew cask install quicklook-json
 brew cask install quicklookapk
 brew cask install webpquicklook
 
-brew cask install the-unarchiver
 brew cask install google-chrome
-brew cask install mplayerx
+brew cask install the-unarchiver
+brew cask install alfred
+brew cask install appcleaner
+brew cask install sizeup
+brew cask install hiddenbar
+brew cask install mos
+brew cask install iina
 brew cask install tickeys
 brew cask install go2shell
 brew cask install qqmusic
 brew cask install qiyimedia
 brew cask install youdaodict
+brew cask install 4k-video-downloader
 
 ## brew cask install programming tools
 brew cask install dingtalk
 brew cask install iterm2
 brew cask install macdown
 brew cask install sublime-text
-brew cask install visual-studio-code
+brew cask install sequel-pro
+brew cask install jetbrains-toolbox
 brew cask install dash3
 brew cask install medis
-brew cask install mysqlworkbench
 brew cask install cocoarestclient
-brew cask install sequel-pro
 brew cask install cakebrew
 
 say "Your mac initialize success"
